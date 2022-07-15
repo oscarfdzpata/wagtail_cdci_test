@@ -1,0 +1,15 @@
+/* Imagen de fondo del sitio */
+html body #pageWrap{
+	/*	background-image:url("../img/fondo_queso.jpg");*/
+	}
+	
+	/* Color del texto */
+	html body .tx-encuestaspublicas-pi1 *{
+		color:black;	
+		background:#A2D52E;
+	}
+	
+	/* Color de la barra de la encuesta */
+	html body .bar-container .bar{
+		background:white;
+	}

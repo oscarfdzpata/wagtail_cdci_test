@@ -1,0 +1,475 @@
+
+
+@import url("form.css"); 
+@import url("comunes.css"); 
+@import url("layout.css"); 
+@import url("header.css"); 
+@import url("login.css"); 
+@import url("search.css"); 
+/*@import url("globalmenu.css");*/ 
+@import url("prepie.css"); 
+@import url("pie.css"); 
+@import url("localmenu.css"); 
+@import url("bloques.css"); 
+
+/* @group Base Styling */
+
+html {
+	height: 100%;
+	background-color: #eeede3;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'h';
+	font-size: 12px;
+	line-height: 17px;
+	color: #1a171b;
+	font-weight: normal;
+	height: 100%;
+
+
+}
+
+
+
+/* NOTE: Much of the typography styling is handled in rte.css */
+
+
+
+/* @group Additional Tags */
+
+
+pre {
+	margin-bottom: 15px;
+	}
+
+code {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+pre code {
+	margin-left: 0px;
+	margin-right: 0px;
+	}
+
+pre,
+code {
+	font-family: 'andale mono', 'monotype.com', 'lucida console', monospace;
+	}
+
+
+/* @end Additional Tags */
+
+/* @group TYPO3 General Styling */
+
+div.csc-textpic-center div.csc-textpic-imagewrap,
+div.csc-textpic-left div.csc-textpic-imagewrap,
+div.csc-textpic-right div.csc-textpic-imagewrap {
+    margin-bottom: 10px;
+}
+    
+/* @end */
+
+
+
+
+/* @group Module Styling */
+
+.moduleHeader {
+	margin: 0;
+	padding: 0 15px 0 0;
+	color: white;
+	background: url(images/right_module_cap.gif) no-repeat right top;
+	font-size: 16px;
+	}
+
+.moduleHeader .moduleHeaderInnerWrap {
+	display: block;
+	padding: 5px 0 5px 10px;
+	background: #3399cc url(images/left_module_cap.gif) no-repeat left top;
+	}
+
+.moduleFooter {
+	height: 15px;
+	margin: 0;
+	padding-right: 15px;
+	background: url(images/right_module_cap.gif) no-repeat right bottom;
+	font-size: 1px;
+	overflow: hidden;
+	line-height: 1em;
+	}
+
+.moduleFooter span {
+	display: block;
+	height: 15px;
+	background: #3399cc url(images/left_module_cap.gif) no-repeat left bottom;
+	}
+
+.moduleBody {
+	padding: 15px 10px 10px 10px;
+	}
+
+.moduleBodyWrap {
+	border-left: 2px solid #3399cc;
+	border-right: 2px solid #3399cc;
+	/* Please note that the thickness values on the two border values above will be overridden in the final output. Make sure these values match the constant moduleBodyBorderWidth */
+	}
+
+.unframed .moduleBody,
+.unframed .moduleBodyWrap {
+	padding: 0;
+	border: 0;
+	}
+
+.unframed .moduleBodyWrap {
+	background:none; 
+} 
+
+.moduleBodyBleed {
+	padding: 0;
+	}
+
+.columnGroup {
+	margin-bottom: 10px;
+	}
+
+.columnGroupRule {
+	border-bottom: 1px solid #7f7f7f;
+	}
+
+.moduleGroup {
+	margin-bottom: 10px;
+	margin-top:5px;
+	}
+
+.moduleFeature {
+	margin-bottom: 15px;
+	}
+
+/* @end Module Styling */
+
+
+
+/* @group Forms */
+
+.csc-mailform-field label,
+.csc-mailform-field label {
+	display: block;
+	}
+
+/* @end */
+
+
+
+/************section menu*******************/
+
+.sectionMenuWrapper {
+	width: 100%;
+}
+
+.sectionMenu {
+	margin: 0;
+	text-align: left;
+}
+
+.sectionMenu .menuItem {
+	display: inline-block;
+	width: 345px;
+	margin: 0 20px 20px 0;
+	vertical-align: top;
+	zoom: 1; 
+	*display:inline;
+}
+
+.wrapper {
+	vertical-align: top;
+}
+
+.menuItem > a + .wrapper {
+	margin-left: 120px;
+}
+
+.menuItem > a {
+	float: left;
+	vertical-align: top;
+}
+
+.menuItem h3 {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html body .guardado {
+
+background:transparent;
+
+}
+
+html body .guardado {
+
+background:transparent;
+
+}
+
+
+
+
+
+
+.encuestarepondida{
+	padding-top: 5px;
+	display:block;
+background: url(img/mosaico.png) top left repeat transparent;
+padding-left: 5px;
+font-size: 28px;
+text-align:center;
+margin-bottom: 0px;
+font-family: 'din';
+line-height: 1.1em;
+font-weight: normal;
+text-transform: uppercase;
+	
+}
+
+
+body select.encuesta_select.invisibleselect,body select.invisibleselect,#tx-srfeuserregister-pi1-gustos.invisibleselect{
+height:0px;
+padding:0px;
+border:0px;
+}
+
+
+
+#pie .centrar .flotante.derecho {
+background-color: white;
+float: right;
+width: 714px;
+
+}
+
+#pie .centrar .flotante.derecho .columnas{
+	height:334px;
+}
+
+
+
+
+
+/* Z-INDEX */
+ .formError { z-index: 990; }
+    .formError .formErrorContent { z-index: 991; }
+    .formError .formErrorArrow { z-index: 996; }
+
+    .ui-dialog .formError { z-index: 5000; }
+    .ui-dialog .formError .formErrorContent { z-index: 5001; }
+    .ui-dialog .formError .formErrorArrow { z-index: 5006; }
+
+
+
+
+.inputContainer {
+	position: relative;
+	float: left;
+}
+
+.formError {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	display: block;
+	cursor: pointer;
+	text-align: left;
+}
+
+.formError.inline {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.ajaxSubmit {
+	padding: 20px;
+	background: #55ea55;
+	border: 1px solid #999;
+	display: none;
+}
+
+.formError .formErrorContent {
+	width: 100%;
+	background: #ee0101;
+	position:relative;
+	color: #fff;
+	min-width: 120px;
+	font-size: 11px;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 6px #000;
+	-moz-box-shadow: 0 0 6px #000;
+	-webkit-box-shadow: 0 0 6px #000;
+	-o-box-shadow: 0 0 6px #000;
+	padding: 4px 10px 4px 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.formError.inline .formErrorContent {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.greenPopup .formErrorContent {
+	background: #33be40;
+}
+
+.blackPopup .formErrorContent {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow {
+	width: 15px;
+	margin: -2px 0 0 13px;
+	position:relative;
+}
+body[dir='rtl'] .formError .formErrorArrow,
+body.rtl .formError .formErrorArrow {
+	margin: -2px 13px 0 0;
+}
+
+.formError .formErrorArrowBottom {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	margin: 0px 0 0 12px;
+	top:2px;
+}
+
+.formError .formErrorArrow div {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	box-shadow: 0 2px 3px #444;
+	-moz-box-shadow: 0 2px 3px #444;
+	-webkit-box-shadow: 0 2px 3px #444;
+	-o-box-shadow: 0 2px 3px #444;
+	font-size: 0px;
+	height: 1px;
+	background: #ee0101;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.formError .formErrorArrowBottom div {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+}
+
+.greenPopup .formErrorArrow div {
+	background: #33be40;
+}
+
+.blackPopup .formErrorArrow div {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow .line10 {
+	width: 15px;
+	border: none;
+}
+
+.formError .formErrorArrow .line9 {
+	width: 13px;
+	border: none;
+}
+
+.formError .formErrorArrow .line8 {
+	width: 11px;
+}
+
+.formError .formErrorArrow .line7 {
+	width: 9px;
+}
+
+.formError .formErrorArrow .line6 {
+	width: 7px;
+}
+
+.formError .formErrorArrow .line5 {
+	width: 5px;
+}
+
+.formError .formErrorArrow .line4 {
+	width: 3px;
+}
+
+.formError .formErrorArrow .line3 {
+	width: 1px;
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	border-bottom: 0 solid #ddd;
+}
+
+.formError .formErrorArrow .line2 {
+	width: 3px;
+	border: none;
+	background: #ddd;
+}
+
+.formError .formErrorArrow .line1 {
+	width: 1px;
+	border: none;
+	background: #ddd;
+}
+
+
+#tx-srfeuserregister-pi1-zone.invisibleselect {
+height: 1px;
+padding: 0px;
+border: 0px;
+position: absolute;
+display: block !important;
+}

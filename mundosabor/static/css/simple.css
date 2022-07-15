@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.tx_adtemplavoilacycle {
+	position: relative;
+	padding: 15px;
+	border: 0px solid #ccc;
+	background-color: transparent;
+}
+
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_browser,
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_pagination {
+	position: absolute;
+	z-index: 10;
+	padding: .8em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	background-color: transparent;
+	opacity: .5;
+}
+
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_browser a {
+	padding: .3em .5em;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	border: 0px solid #333;
+	text-indent:-9999;
+}
+
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_pagination ul {
+	margin: 0;
+	list-style: none;
+}
+
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_pagination ul li {
+	float: left;
+}
+
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_pagination ul li a {
+	padding: .3em .5em;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	border: 0px solid #333;
+}
+
+.tx_adtemplavoilacycle .tx_adtemplavoilacycle_pagination ul li.activeSlide a {
+	font-weight: bold;
+}

@@ -1,0 +1,666 @@
+/* default styles for extension "tx_felogin_pi1" */
+.tx-felogin-pi1 label {
+    display: block;
+}
+/* default styles for extension "tx_mvtamsgustos" */
+input.f3-form-error {
+    background-color:#FF9F9F;
+    border: 1px #FF0000 solid;
+}
+
+.tx-mvtamsgustos table {
+    border-collapse:separate;
+    border-spacing:10px;
+}
+
+.tx-mvtamsgustos table th {
+    font-weight:bold;
+}
+
+.tx-mvtamsgustos table td {
+    vertical-align:top;
+}
+/* default styles for extension "tx_srfeuserregister_pi1" */
+    .tx-srfeuserregister-pi1 p { margin-top: .5em; margin-bottom: 0; padding: 0 .3em; text-indent: 0; }
+    .tx-srfeuserregister-pi1 h4 { margin-top: 0; padding-left: .3em; }
+    .tx-srfeuserregister-pi1 legend { padding: 0 .5em; font-weight: bold; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-notice { font-style: italic; margin-bottom: 1em; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-trash { margin-bottom: 2em; }
+    .tx-srfeuserregister-pi1 a { padding-left: 14px; background-image: url("../typo3conf/ext/sr_feuser_register/pi1/internal_link.gif"); background-repeat: no-repeat; background-position: 0% 60%; text-decoration:none; }
+    .tx-srfeuserregister-pi1 label { margin: 0; padding: 0; }
+    .tx-srfeuserregister-pi1 label span { color: #ff0000; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-error { color: #ff0000; }
+    .tx-srfeuserregister-pi1 input { margin: 0; padding: 0 .5em 0 0; }
+    .tx-srfeuserregister-pi1 input[type=password] { margin-right: 1em; }
+    * html .tx-srfeuserregister-pi1 input.tx-srfeuserregister-pi1-password { margin-right: 1em; }
+    .tx-srfeuserregister-pi1 input[type=radio], .tx-srfeuserregister-pi1 input[type=checkbox] { background-color: transparent; }
+    * html .tx-srfeuserregister-pi1 input.tx-srfeuserregister-pi1-radio, * html .tx-srfeuserregister-pi1 input.tx-srfeuserregister-pi1-checkbox { background-color: transparent; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-delete-icon { margin-left: 1em; background-color: transparent; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-delete-icon:hover { cursor: pointer; }
+    .tx-srfeuserregister-pi1 a.tx-srfeuserregister-pi1-file-view { padding-left: 15px; background-image: url("../typo3conf/ext/sr_feuser_register/pi1/internal_link_new_window.gif"); background-color: transparent; background-repeat: no-repeat; font-size: .8em; margin-left: 1em; }
+    .tx-srfeuserregister-pi1 ul { margin: 0; padding: 0; list-style-position: inside; }
+    .tx-srfeuserregister-pi1 ul.tx-srfeuserregister-multiple-checkboxes { list-style-type: none; }
+    .tx-srfeuserregister-pi1 ul.tx-srfeuserregister-multiple-checkboxes li { margin: 0 0 .3em 0; padding: 0; }
+    .tx-srfeuserregister-pi1 ul.tx-srfeuserregister-multiple-checkboxes li label { margin: 0; padding: 0 0 0 .5em; }
+    .tx-srfeuserregister-pi1 ul.tx-srfeuserregister-multiple-checked-values li { float: left; padding: 0 2em 0 0; margin: 0; }
+    .tx-srfeuserregister-pi1 dl { margin: 0; padding: 1em 0 0 0; }
+    .tx-srfeuserregister-pi1 dt, .tx-srfeuserregister-pi1 dd { margin: 0; padding: 0 0 .5em 0; float: left; }
+    .tx-srfeuserregister-pi1 dt { clear: both; width: 25%; text-align: right; padding-right: 1em; }
+    .tx-srfeuserregister-pi1 dd { text-align: left; width: 50%; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-multiple-checkboxes dt { width: auto; padding-right: 0; }
+    .tx-srfeuserregister-pi1 .tx-srfeuserregister-pi1-multiple-checkboxes dd { width: auto; }
+    * html .tx-srfeuserregister-pi1 dd { float: none; }
+    .tx-srfeuserregister-pi1 dd p { margin-top: 0; margin-bottom: .5em; padding: 0; }
+    .tx-srfeuserregister-pi1 dd label { padding: 0 1em 0 .5em; }
+/* default styles for extension "tx_loginboxmacmade_pi1" */
+    .tx-loginboxmacmade-pi1 .tx-loginboxmacmade-pi1-error {
+        color: #FF0000;
+    }
+    .tx-loginboxmacmade-pi1 TABLE.tx-loginboxmacmade-pi1-loginTable {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: solid 1px #DFE2E3;
+        border-collapse: collapse;
+    }
+    .tx-loginboxmacmade-pi1 TABLE.tx-loginboxmacmade-pi1-loginTable TD {
+        border: solid 1px #DFE2E3;
+        background-color: #FAFBFB;
+        padding: 5px;
+    }
+    .tx-loginboxmacmade-pi1 TABLE.tx-loginboxmacmade-pi1-loginTable TD.tx-loginboxmacmade-pi1-labelCell {
+        border: solid 1px #E5D9B1;
+        background-color: #F0E9D2;
+        font-weight: bold;
+    }
+/* default styles for extension "tx_catalogomundosabor" */
+input.f3-form-error {
+    background-color:#FF9F9F;
+    border: 1px #FF0000 solid;
+}
+
+.tx-catalogomundosabor table {
+    border-collapse:separate;
+    border-spacing:10px;
+}
+
+.tx-catalogomundosabor table th {
+    font-weight:bold;
+}
+
+.tx-catalogomundosabor table td {
+    vertical-align:top;
+}
+/* default styles for extension "tx_srlanguagemenu_pi1" */
+.tx-srlanguagemenu-pi1 p, .tx-srlanguagemenu-pi1 .links-list-header { font-family: Verdana, sans-serif; font-size: .8em; line-height:100%; color: #35006d; margin-top: 8px; padding: 0; text-indent: 0; }
+.tx-srlanguagemenu-pi1 img { margin: 0 5px; padding: 0; border-style: none; }
+.tx-srlanguagemenu-pi1 .CUR { float: left; font-size: .8em; }
+.tx-srlanguagemenu-pi1 .CUR a { background-color: transparent; color: #35006d; text-decoration: none; font-weight: bold; }
+.tx-srlanguagemenu-pi1 .CUR a:focus, .tx-srlanguagemenu-pi1 .CUR a:hover, .tx-srlanguagemenu-pi1 .CUR a:active { color:#333333; }
+.tx-srlanguagemenu-pi1 .NO { float: left; font-size: .8em; }
+.tx-srlanguagemenu-pi1 .NO a { background-color:transparent; color: #35006d; text-decoration:none; font-weight:bold; }
+.tx-srlanguagemenu-pi1 .NO a:focus, .tx-srlanguagemenu-pi1 .NO a:hover, .tx-srlanguagemenu-pi1 .NO a:active { color:#333333; }
+.tx-srlanguagemenu-pi1 .INACT { float: left; font-size: .8em; }
+.tx-srlanguagemenu-pi1 .INACT a { background-color:transparent; color: #35006d; text-decoration: none; font-weight: normal; }
+.tx-srlanguagemenu-pi1 .INACT a:focus, .tx-srlanguagemenu-pi1 .INACT a:hover, .tx-srlanguagemenu-pi1 .INACT a:active { color: #333333; }
+.tx-srlanguagemenu-pi1 .SPC {  float: left; font-family: Verdana, sans-serif; font-size: .8em; line-height: 100%; color: #35006d; }
+.tx-srlanguagemenu-pi1 fieldset { }
+.tx-srlanguagemenu-pi1 fieldset legend { }
+.tx-srlanguagemenu-pi1 fieldset label { display: none; }
+.tx-srlanguagemenu-pi1 fieldset select { font-size: .8em; font-family: Verdana, sans-serif; background-color: #35006d; color: white; font-weight: bold; }
+.tx-srlanguagemenu-pi1 fieldset option.tx-srlanguagemenu-pi1-option-0 { }
+/* default styles for extension "tx_vjchat_pi1" */
+
+/* FRAME AND MAIN CONTAINERS */
+
+    div#tx-vjchat-container * {
+        border: 0;
+        margin: 0;
+        padding: 1px;
+    }
+    
+    div#tx-vjchat-container {
+        min-height: 20px;
+    }
+    
+    div#tx-vjchat-content {
+        height: 20em;  
+        position: relative;
+        margin-top: 0.5em;
+        width: 99%;
+    }		
+    
+    div#tx-vjchat-loadinginfo {
+        position: absolute;
+        width: 250px;
+        height: 2em;
+        padding: 2em;
+        border: 1px solid #CFCFCF;
+        background-color: #fff;
+        left:50%;
+        margin-left:-120px;
+        margin-top: 5%;
+        text-align: center;
+        z-index: 1000;
+        filter:alpha(opacity=80);
+        -moz-opacity:0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;			
+    }
+    
+    div#tx-vjchat-messages {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid #CFCFCF;
+        overflow: auto;
+        width: 68%;
+        background-color: #fff;
+    }
+
+    div#tx-vjchat-storedMessages {
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        border: 1px solid #CFCFCF;
+        overflow: auto;
+        width: 68%;
+        background-color: #fff;
+        border: 2px solid #82C885;
+        z-index:100;
+    }	
+    div#tx-vjchat-userlist {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        overflow: auto;
+        border: #CFCFCF solid 1px;
+        color: #000;
+        background-color: #FFF;
+        width: 30%;
+        height: 20em;
+    }		
+    
+    div#tx-vjchat-tools-container {
+        margin-top: 0.2em;
+        
+    }
+
+    div#tx-vjchat-format,
+    div#tx-vjchat-format a,
+    div#tx-vjchat-format img {
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    div#tx-vjchat-emoticons {
+        padding: 0.2em 0 0 0.2em;
+        height: 20px;
+    }
+    
+    #tx-vjchat-emoticons img {
+        margin: 0 0.1em;
+        cursor:pointer;
+    }		
+    
+    div#tx-vjchat-style {
+        padding: 0.2em 0.2em 0.2em 0.265em;
+    }
+    
+    div#tx-vjchat-input-container {
+        clear:both;
+    }
+
+    textarea#txvjchatnewMessage {
+        width: 99%;
+        font-family: "Arial", "Helvetica", sans-serif;
+        font-size: 10pt;
+        height: 6em;
+        border: #CFCFCF solid 1px;
+        margin: 0;
+    }	
+    
+    #tx-vjchat-debug {
+        width: 99%;
+        height: 200px; 
+        border: 1px solid silver; 
+        font-family: Courier New, Courier; 
+        font-size: 8pt; 
+        overflow:auto; 
+    }
+
+
+
+/* MESSAGE ITEMS */
+
+    div.tx-vjchat-entry {
+        border-bottom: 1px solid #FAF7F3;
+        background-color: #fff;		
+        font-family: "Arial", "Helvetica", sans-serif;
+        font-size: 10pt;
+        /*line-height: 1.3em;*/
+        color: #320101;
+        /*margin: 0.25em 0 0 0;
+        padding: 0em 0 0.625em 0.25em;*/
+    }
+
+    div.tx-vjchat-moderator {
+        color: #880000;
+    }
+    
+    div.tx-vjchat-expert {
+        color: #06480E;
+    }
+
+
+    .tx-vjchat-superuser {
+        background-color: #FFE4E4;
+    }		
+    
+    div.tx-vjchat-entry span.tx-vjchat-user {
+        font-weight: bold;
+    }
+
+    div.tx-vjchat-system,
+    div.tx-vjchat-system .tx-vjchat-entry {
+        color: #9E9E9E;
+        font-size: 0.9em;
+        font-style: italic;			
+    }		
+    div.tx-vjchat-hidden {
+        background-color: #F2F2F2;
+        color: #9E9E9E;
+    }
+    
+    div.tx-vjchat-committed {
+        background-color: #B8F2AE;
+    }
+
+    span.tx-vjchat-time {
+        font-size: 8pt;
+        color: #9E9E9E;
+    }
+    
+    span.tx-vjchat-bold {
+        font-weight: bold;
+    }
+
+    span.tx-vjchat-underlined {
+        text-decoration: underline;
+    }
+
+    span.tx-vjchat-italic {
+        font-style: italic;
+    }
+
+    span.tx-vjchat-stroke {
+        text-decoration: line-through;
+    }		
+
+    p.tx-vjchat-error {
+        font-weight: bold;
+        color: #f00;
+    }
+    
+    a.tx-vjchat-actionlink {
+        cursor:pointer;
+        font-size: 8pt;
+        color: #337236;
+    }
+    
+    a.tx-vjchat-actionlink:hover {
+        color: #0F3D11;
+        text-decoration: underline;
+    }
+
+/* SELECTABLE USER STYLES */
+    
+    /* if you do not want to colorize usernames like style use
+        .tx-vjchat-message-style-0  .tx-vjchat-entry {
+            color: #000000;
+        }
+    */
+    .tx-vjchat-message-style-0   {
+        color: #000000;
+    }
+    .tx-vjchat-message-style-1 {
+        color: #000055;
+    }
+    .tx-vjchat-message-style-2 {
+        color: #008000;
+    }
+    .tx-vjchat-message-style-3 {
+        color: #FF0000;
+    }
+    .tx-vjchat-message-style-4 {
+        color: #800000;
+    }
+    .tx-vjchat-message-style-5 {
+        color: #800080;
+    }
+    .tx-vjchat-message-style-6 {
+        color: #FF5500;
+    }
+    .tx-vjchat-message-style-7 {
+        color: #FFFF00;
+    }
+    .tx-vjchat-message-style-8 {
+        color: #00FF00;
+    }
+    .tx-vjchat-message-style-9  {
+        color: #008080;
+    }
+    .tx-vjchat-message-style-10 {
+        color: #00FFFF;
+    }
+    .tx-vjchat-message-style-11 {
+        color: #0000FF;
+    }
+    .tx-vjchat-message-style-12 {
+        color: #FF00FF;
+    }
+    .tx-vjchat-message-style-13 {
+        color: #7F7F7F;
+    }
+    .tx-vjchat-message-style-14 {
+        color: #D2D2D2;
+    }
+
+
+/* HELP AND COMMAND OUTPUT */
+
+
+    .tx-vjchat-ok {
+        color: #06480E;
+        background-color: #F0F0F0;
+    }
+    
+    .tx-vjchat-error {
+        color: #f00;
+    }
+    
+    div.tx-vjchat-cmd-smileys-text {
+        width: 5em;
+        height: 1.2em;
+        float: left;
+        background-color: #F0F0F0;
+        margin-bottom: 0.625em;
+        text-align: right;		
+        padding-right: 0.625em;
+    }
+
+    div.tx-vjchat-cmd-smileys-image {
+        width: 4em;
+        height: 1.2em; 		
+        float: left;
+        background-color: #F0F0F0;
+        margin-bottom: 0.625em;
+    }
+
+    div.tx-vjchat-cmd-help,
+    div.tx-vjchat-cmd-help * {
+        font-size: 0.95em;
+        background-color: #F0F0F0;			
+    }
+    
+    div.tx-vjchat-cmd-help div.tx-vjchat-cmd-help-command {
+    }
+            
+    span.tx-vjchat-cmd-help-link {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    div.tx-vjchat-cmd-help-command div.tx-vjchat-cmd-help-command-title {
+        width: 9em;
+        float: left;
+        clear: left;
+        font-weight: bold;
+    }
+
+    div.tx-vjchat-cmd-help-command span.tx-vjchat-cmd-help-command-descr {
+        /*display: block;
+        margin-left: 10em;*/
+    }
+
+    div.tx-vjchat-cmd-help-command span.tx-vjchat-cmd-help-parameter-list {
+    }
+
+    div.tx-vjchat-cmd-help-command span.tx-vjchat-cmd-help-parameter-descr {
+        display: block;
+        margin-left: 11em;		
+    }
+
+/* USERLIST ITEMS */
+
+    #tx-vjchat-userlist * {
+        font-family: "Arial", "Helvetica", sans-serif;
+        font-size: 0.9em;
+    }
+    
+    #tx-vjchat-userlist .tx-vjchat-link-box {
+        display: block;
+        width: 50px;
+        float: right;			
+    }
+    
+    
+    #tx-vjchat-userlist .tx-vjchat-pr-link,
+    #tx-vjchat-userlist .tx-vjchat-pm-link {
+        font-size: 0.8em;
+        cursor: pointer;			
+    }
+
+    #tx-vjchat-userlist .tx-vjchat-userlist-moderator {
+        color: #880000;
+    }
+
+    #tx-vjchat-userlist .tx-vjchat-userlist-expert {
+        color: #06480E;
+    }
+
+
+    #tx-vjchat-userlist .tx-vjchat-userlist-superuser {
+        background-color: #FFE4E4;
+    }
+    
+    #tx-vjchat-userlist .tx-vjchat-userlist-username {
+        font-weight: bold;
+        cursor: pointer;
+        float:left;
+    }
+
+    #tx-vjchat-userlist .tx-vjchat-userlist-user,
+    #tx-vjchat-userlist .tx-vjchat-userlist-moderator,
+    #tx-vjchat-userlist .tx-vjchat-userlist-expert,
+    #tx-vjchat-userlist .tx-vjchat-userlist-owner,		
+    #tx-vjchat-userlist .tx-vjchat-userlist-superuser {
+    }
+
+    #tx-vjchat-userlist .tx-vjchat-userlist-owner,
+    #tx-vjchat-userlist .tx-vjchat-userlist-moderator,
+    #tx-vjchat-userlist .tx-vjchat-userlist-superuser {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #tx-vjchat-userlist .tx-vjchat-userlist-item img,
+    #tx-vjchat-user-detail img {
+        float: left;
+        margin-right: 2px;
+    }
+    
+    #tx-vjchat-userlist .tx-vjchat-userlist-item {
+        clear: both;
+        height: 20px;
+        border-bottom: 1px solid #FBFBFB;
+    }		
+    
+    #tx-vjchat-userlist .tx-vjchat-userlist-item:hover {
+        font-weight: bold;
+    }
+
+    #tx-vjchat-user-detail {
+        border: 1px solid #CFCFCF;
+        background-color: #fff;
+        width: 12em;
+        padding: 0.8em;			
+        filter:alpha(opacity=80);
+        z-index: 10000;
+        -moz-opacity:0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+    }
+    
+    
+    #tx-vjchat-user-detail * {
+        font-family: "Arial", "Helvetica", sans-serif;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;		
+    }
+
+    #tx-vjchat-user-detail #tx-vjchat-user-detail-caption {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    
+    .tx-vjchat-rooms-short a img {
+        margin-right: 0.2em !important;
+        padding: 0 !important;
+        border: 0;
+    }
+/* default styles for extension "tx_cssstyledcontent" */
+/* Captions */
+DIV.csc-textpic-caption-c .csc-textpic-caption { text-align: center; }
+DIV.csc-textpic-caption-r .csc-textpic-caption { text-align: right; }
+DIV.csc-textpic-caption-l .csc-textpic-caption { text-align: left; }
+
+/* Needed for noRows setting */
+DIV.csc-textpic DIV.csc-textpic-imagecolumn { float: left; display: inline; }
+
+/* Border just around the image */
+DIV.csc-textpic-border DIV.csc-textpic-imagewrap .csc-textpic-image IMG, DIV.csc-textpic-border DIV.csc-textpic-single-image IMG {
+    border: 2px solid black;
+    padding: 0px 0px;
+}
+
+DIV.csc-textpic-imagewrap { padding: 0; }
+
+DIV.csc-textpic IMG { border: none; }
+
+/* DIV: This will place the images side by side */
+DIV.csc-textpic DIV.csc-textpic-imagewrap DIV.csc-textpic-image { float: left; }
+
+/* UL: This will place the images side by side */
+DIV.csc-textpic DIV.csc-textpic-imagewrap UL { list-style: none; margin: 0; padding: 0; }
+DIV.csc-textpic DIV.csc-textpic-imagewrap UL LI { float: left; margin: 0; padding: 0; }
+
+/* DL: This will place the images side by side */
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image { float: left; }
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DT { float: none; }
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD { float: none; }
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD IMG { border: none; } /* FE-Editing Icons */
+DL.csc-textpic-image { margin: 0; }
+DL.csc-textpic-image DT { margin: 0; display: inline; }
+DL.csc-textpic-image DD { margin: 0; }
+
+/* Clearer */
+DIV.csc-textpic-clear { clear: both; }
+
+/* Margins around images: */
+
+/* Pictures on left, add margin on right */
+DIV.csc-textpic-left DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap .csc-textpic-image {
+    display: inline; /* IE fix for double-margin bug */
+    margin-right: 10px;
+}
+
+/* Pictures on right, add margin on left */
+DIV.csc-textpic-right DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap .csc-textpic-image {
+    display: inline; /* IE fix for double-margin bug */
+    margin-left: 10px;
+}
+
+/* Pictures centered, add margin on left */
+DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image {
+    display: inline; /* IE fix for double-margin bug */
+    margin-left: 10px;
+}
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image .csc-textpic-caption { margin: 0; }
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image IMG { margin: 0; vertical-align:bottom; }
+
+/* Space below each image (also in-between rows) */
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image { margin-bottom: 10px; }
+DIV.csc-textpic-equalheight DIV.csc-textpic-imagerow { margin-bottom: 10px; display: block; }
+DIV.csc-textpic DIV.csc-textpic-imagerow { clear: both; }
+DIV.csc-textpic DIV.csc-textpic-single-image IMG { margin-bottom: 10px; }
+
+/* IE7 hack for margin between image rows */
+*+html DIV.csc-textpic DIV.csc-textpic-imagerow .csc-textpic-image { margin-bottom: 0; }
+*+html DIV.csc-textpic DIV.csc-textpic-imagerow { margin-bottom: 10px; }
+
+/* No margins around the whole image-block */
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-firstcol { margin-left: 0px !important; }
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-lastcol { margin-right: 0px !important; }
+
+/* Add margin from image-block to text (in case of "Text w/ images") */
+DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap,
+DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap {
+    margin-right: 10px !important;
+}
+DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap,
+DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap {
+    margin-left: 10px !important;
+}
+
+/* Positioning of images: */
+
+/* Above */
+DIV.csc-textpic-above DIV.csc-textpic-text { clear: both; }
+
+/* Center (above or below) */
+DIV.csc-textpic-center { text-align: center; /* IE-hack */ }
+DIV.csc-textpic-center DIV.csc-textpic-imagewrap { margin: 0 auto; }
+DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image { text-align: left; /* Remove IE-hack */ }
+DIV.csc-textpic-center DIV.csc-textpic-text { text-align: left; /* Remove IE-hack */ }
+
+/* Right (above or below) */
+DIV.csc-textpic-right DIV.csc-textpic-imagewrap { float: right; }
+DIV.csc-textpic-right DIV.csc-textpic-text { clear: right; }
+
+/* Left (above or below) */
+DIV.csc-textpic-left DIV.csc-textpic-imagewrap { float: left; }
+DIV.csc-textpic-left DIV.csc-textpic-text { clear: left; }
+
+/* Left (in text) */
+DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap { float: left; }
+
+/* Right (in text) */
+DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap { float: right; }
+
+/* Right (in text, no wrap around) */
+DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap { float: right; clear: both; }
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html DIV.csc-textpic-intext-right-nowrap .csc-textpic-text { height: 1%; }
+/* End hide from IE5/mac */
+
+/* Left (in text, no wrap around) */
+DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap { float: left; clear: both; }
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html DIV.csc-textpic-intext-left-nowrap .csc-textpic-text,
+* html .csc-textpic-intext-left ol,
+* html .csc-textpic-intext-left ul { height: 1%; }
+/* End hide from IE5/mac */
+
+DIV.csc-textpic DIV.csc-textpic-imagerow-last { margin-bottom: 0; }
+
+/* Browser fixes: */
+
+/* Fix for unordered and ordered list with image "In text, left" */
+.csc-textpic-intext-left ol, .csc-textpic-intext-left ul {padding-left: 40px; overflow: auto; }

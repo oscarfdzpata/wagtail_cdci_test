@@ -1,0 +1,143 @@
+/* @group Layout */
+#nav,#header,#breadcrumbs,#contentWrap-outer,#prepie,#pie{
+    width:100%;
+  }
+  
+  #nav .centrar,#header .centrar,#breadcrumbs .centrar,#contentWrap-outer #contentWrap,#prepie .centrar,#pie .centrar{
+    width:960px;
+    margin:0 auto;
+  
+  }
+  
+  #pageWrap {
+    width: 100%;
+    padding: 0;
+    margin:0px;
+  }
+  
+  #destacado {
+    margin-bottom: 10px;
+    padding:0px;
+  }
+  
+  #feature {
+    margin-bottom: 0px;
+    padding:0px;
+    width:960px;
+    background-color: #fff;
+    margin:0 auto;
+  }
+  
+  #generatedContent-1 {
+    width: 235px;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+  }
+  
+  #generatedContent-2 {
+    width: 230px;
+    float: right;
+  }
+  
+  #f1d #contentBlock-1 {
+    float: right;
+    width: 715px;
+  }
+  
+  #f1e #contentBlock-1 {
+    float: left;
+    width: 730px;
+  }
+  
+  #f1f #contentBlock-1 {
+    float: left;
+    width: 469px;
+  }
+  
+  #f2a #contentBlock-1 {
+    float: left;
+    width: 715px;
+  }
+  
+  #f2a #contentBlock-2 {
+    width: 235px;
+    float: right;
+  }
+  
+  #f2b #contentBlock-1 {
+    float: left;
+    width: 715px;
+  }
+  
+  #f2b #contentBlock-2 {
+    width: 235px;
+    float: right;
+  }
+  
+  #f2c #contentBlock-1 {
+    float: left;
+    width: 715px;
+  }
+  
+  #f2c #contentBlock-2 {
+    width: 235px;
+    float: right;
+  }
+  
+  #f2d #contentBlock-1 {
+    float: left;
+    width: 469px;
+  }
+  
+  #f2d #contentBlock-2 {
+    width: 235px;
+    float: right;
+  }
+  
+  #f2e #contentBlock-1 {
+    float: left;
+    width: 469px;
+    margin-right: 20px;
+  }
+  
+  #f2e #contentBlock-2 {
+    width: 235px;
+    float: left;
+  }
+  
+  #f3a #contentBlock-1,
+  #f3b #contentBlock-1 {
+    float: left;
+    width: 469px;
+    margin-right: 20px;
+  }
+  
+  #f3a #contentBlock-2,
+  #f3b #contentBlock-2 {
+    width: 235px;
+    float: left;
+  }
+  
+  #f3a #contentBlock-3,
+  #f3b #contentBlock-3,
+  #f3c #contentBlock-3,
+  #f3d #contentBlock-3 {
+    width: 235px;
+    float: right;
+  }
+  
+  #f3c #contentBlock-1,
+  #f3d #contentBlock-1 {
+    float: left;
+    width: 469px;
+  }
+  
+  #f3c #contentBlock-2,
+  #f3d #contentBlock-2 {
+    width: 235px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  /* @end Layout */

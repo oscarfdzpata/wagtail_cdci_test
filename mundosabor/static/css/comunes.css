@@ -1,0 +1,37 @@
+.clear {
+    clear: both;
+    }
+  
+  .clearOnly {
+    clear: both;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 0;
+    }
+  
+  .outOfSight {
+    position: absolute;
+    top: 0;
+    left: -4000px;
+    }
+  
+  .centralHeadline{
+    font-size:28px;
+    margin-top:0;
+  }
+  
+  .csc-firstHeader {
+    /*margin-top: 0px;*/
+  }
+  
+  .graphicTextWrap {
+    overflow: hidden;
+    }
+  
+  .graphicText {
+    line-height:300px;
+    display: block;
+    }
+  

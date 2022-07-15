@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load wagtailcore_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/fondoyencuestas.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<p>{{ page.title }}</p>
+<p>{{ page.text }}</p>
+{% endfor %}

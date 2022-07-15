@@ -1,0 +1,865 @@
+{% extends "index-3.html" %}
+{% load static %}
+
+{% load wagtailcore_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/fondoyencuestas.css' %}"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/home/surveys.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+
+<!-- Slider Images -->
+<div style="background-color: #FBFBFB;">
+
+   <!-- <div class="container mt-2 mb-5"> -->
+   <div class="container mt-2 ">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators" style="bottom: -40px;">
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 4"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 4"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner shadow-lg">
+
+         <!-- 1 -->              
+         <div class="carousel-item active" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/364a90c081.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center carousel-bg__item-1">
+               <div class="carousel-captio d-none d-lg-block" style="padding: 20px !important;">
+                  <h5 class="text-white" style="text-align: center;">CONSUMIDOR 360, UNA ESTRATEGIA PARA EL DESARROLLO DE NUEVOS PRODUCTOS.</h5>
+                  <!-- <p class="">Algún contenido placeholder representativo para la tercera diapositiva.</p> -->
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <!-- 2 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/e0ae0811fb.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-2">
+               <div  class="carousel-caption d-none d-lg-block d-flex justify-content-center">
+                  <h5  class="">COLABORA CON NOSOTROS.</h5>
+                  <p class="text-white">En el siguiente estudio necesitamos obtener información sobre, PRODUCTOS PESQUEROS, que estamos desarrollando para un Proyecto de Investigación 
+                  Para participar con nosotros regístrate en nuestra comunidad y gana premios directos</p>
+               </div>
+            </div>
+            </div>
+         </div>
+         
+         <!-- 3 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/trend_senior.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-3" >
+               <div class="carousel-caption d-none d-lg-block d-flex justify-content-center "  >
+                  <h5 class="" >YA TENEMOS GANADOR.</h5>
+                  <p class="text-white">Ya tenemos el ganador de la mejor idea del concurso Trend Senior. Es Juan José Morales de Málaga.
+                  Para él tenemos un premio muy especial: Una divertida experiencia de bienestar, gastronomía o aventura. La actividad que más le guste.                         
+                  ¡Enhorabuena!</p>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <!-- 4 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/e90e0f5fb5.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-4">
+               <div class="carousel-caption d-none d-lg-block d-flex justify-content-center ">
+                  <h5 class="">AYÚDANOS A INVESTIGAR EN LOS ALIMENTOS</h5>
+                  <p class="text-white">Participa con nosotros, regístrate y gana 100 puntos en premios directos. </p>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <!-- 5 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/0c7321c830.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-5">
+               <div class="carousel-caption d-none d-lg-block d-flex justify-content-center ">
+                  <h5 class="">CATAMOS EN CASA</h5>
+                  <p class="text-white">Muy pronto tendremos una nueva campaña de alimentos para catar en casa. !Participar es muy fácil¡
+                  Sólo tienes que confirmarnos tus datos, identificar tu perfil, probar los productos y rellenar en la web unos breves cuestionarios de evaluación.
+                  Apúntate AQUÍ.</p>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <!-- 6 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/slider-romantico.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-6">
+               <div class="carousel-caption d-none d-lg-block d-flex justify-content-center ">
+                  <h5 class="">¿HAS VISTO TODOS LOS PREMIOS QUE TE ESPERAN EN MUNDO SABOR?</h5>
+                  <p class="text-white">Mundo Sabor quiere premiar tu participación.
+                  ¡Échale un vistazo al catalogo de premios!</p>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <!-- 7 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/5568479627.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-7">
+               <div class="carousel-caption d-none d-lg-block d-flex justify-content-center ">
+                  <h5 class="">¿QUIERES PROBAR PRODUCTOS EN CASA?</h5>
+                  <p class="text-white">Hemos puesto en marcha una nueva dinámica de trabajo: la prueba de productos en el hogar. ¡Participar es muy fácil!
+                  Sólo tienes que confirmarnos tus datos, identificar tu perfil , probar los productos y rellenar en la web unos breves cuestionarios de evaluación</p>
+               </div>
+            </div>
+            </div>
+         </div>
+
+         <!-- 8 -->
+         <div class="carousel-item" data-bs-interval="4000">
+            <div class="row g-0">
+            <div class="col-12 col-lg-6">
+               <img src="{% static 'agroment/img/slider/chica2.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-6 carousel-bg__item-8">
+               <div class="carousel-caption d-none d-lg-block d-flex justify-content-center ">
+                  <h5 class="">ÚNETE A LA COMUNIDAD MUNDO SABOR </h5>
+                  <p class="text-white">Y cuéntanos lo que te gusta, tú opinión es muy importante para nosotros.</p>
+               </div>
+            </div>
+            </div>
+         </div>
+
+
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Siguiente</span>
+      </button>
+      </div>
+   </div>
+
+ </div>
+<!-- Slider Images -->
+
+<!-- posts Area -->
+<!-- <div class="posts-are area-padding-large bg-color-white"> -->
+<!-- <div class="posts-area" style="border-top: 1px solid #eeeeee;"> -->
+<div class="posts-area" >
+   <div class="container">
+         <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-12 offset-0">
+               <div class="section-title text-center">
+                     <h2>Ultimas Noticias</h2>
+                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, velit.</p> -->
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-center latest-post-active slider-nav-btn-2">
+            
+            <!-- Single post -->
+            <div class="col-md-12 wow fadeInUp custom_grid_class ">
+               <article class="post single-post border shadow ">
+                     <div class="post-thumb">
+                        <a href="blog-details.html">
+                           <img src="{% static 'img/850e3625b1.jpg' %}" style="width:100%; height: 200px;object-fit: cover;"  alt="post thumb">
+                        </a>
+                        <div class="post-date">Saber más sobre Mundo Sabor</div>
+                     </div>
+                     <div class="post-content">
+                        <h5>
+                           <a href="blog-details.html">Mundo Sabor</a>
+                        </h5>
+                        <!-- <p>long established fact that a reader will be distract ed by the readable content</p> -->
+                        <p>
+                           <span class=" w3c54">Es una&nbsp;</span>
+                           <strong class=" w3c55">comunidad virtual promovida por instituciones sin ánimo de lucro</strong>
+                           <span class=" w3c56">, dirigida por profesionales con una larga experiencia en el análisis sensorial y de pautas de consumo.</span>
+                        </p>
+                        <a href="blog-details.html" class="readmore-btn">Read More</a>
+                     </div>
+               </article>
+            </div>
+            <!--Single post -->
+            
+            <!-- Single post -->
+            <div class="col-md-12 wow fadeInUp custom_grid_class">
+               <article class="post single-post border shadow">
+                     <div class="post-thumb">
+                        <a href="blog-details.html">
+                           <img src="{% static 'img/dbaff48517.jpg' %}" style="width:100%; height: 200px;object-fit: cover;"  alt="post thumb">
+                        </a>
+                        <div class="post-date">¡Ya hemos empezado nuestros estudios!</div>
+                     </div>
+                     <div class="post-content">
+                        <h5>
+                           <a href="blog-details.html">Buscamos Catadores</a>
+                        </h5>
+                        <p>En Mundo Sabor <strong>buscamos consumidores</strong> para realizar estudios sensoriales on-line&nbsp;y presenciales en alimentos. Si estás interesado en colaborar y formar parte de nuestro panel de&nbsp;consumidores Mundo Sabor ¡<a href="comunidad-mundo-sabor/registro.html" title="Opens internal link in current window" class="internal-link"><strong>regístrate</strong></a> y <strong>participa</strong>!</p>
+                        <a href="blog-details.html" class="readmore-btn">Read More</a>
+                     </div>
+               </article>
+            </div>
+            <!--Single post -->
+            
+            <!-- Single post -->
+            <div class="col-md-12 wow fadeInUp custom_grid_class">
+               <article class="post single-post border shadow">
+                     <div class="post-thumb">
+                        <a href="blog-details.html">
+                           <img src="{% static 'img/87d18e0d7c.jpg' %}" style="width:100%; height: 200px;object-fit: cover;" alt="post thumb">
+                        </a>
+                        <div class="post-date">Échale un vistazo a nuestro catálogo de premios</div>
+                     </div>
+                     <div class="post-content">
+                        <h5>
+                           <a href="blog-details.html">¿Qué beneficios obtienes?</a>
+                        </h5>
+                        <p><span class=" w3c65">Pero lo más importante <strong class=" w3c66"><a href="premios.html" title="Opens internal link in current window" class="internal-link">tu colaboración tiene recompensa</a></strong>, ya que podrás ganar un montón&nbsp;</span><span class=" w3c67">de <a href="premios.html" title="Opens internal link in current window" class="internal-link">premios</a> directos por participar en nuestros estudios.</span></p>
+                        <a href="blog-details.html" class="readmore-btn">Read More</a>
+                     </div>
+               </article>
+            </div>
+            <!--Single post -->
+                                    
+            <!-- Single post -->
+            <div class="col-md-12 wow fadeInUp custom_grid_class">
+               <article class="post single-post">
+                     <div class="post-thumb">
+                        <a href="blog-details.html">
+                  <img src="{% static 'agroment/img/post/4.jpg' %}" alt="post thumb">
+               </a>
+                        <div class="post-date">Feb 17, 2022</div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-meta">
+                           <span>By:
+                     <a href="#">Pores 2</a>
+                  </span>
+                           <span><a href="#">07 post_comments</a></span>
+                        </div>
+                        <h5>
+                           <a href="blog-details.html">Best Organic Shop</a>
+                        </h5>
+                        <p>long established fact that a reader will be distract ed by the readable content</p>
+                        <a href="blog-details.html" class="readmore-btn">Read More</a>
+                     </div>
+               </article>
+            </div>
+            <!--Single post -->
+            
+            <!-- Single post -->
+            <div class="col-md-12 wow fadeInUp custom_grid_class">
+               <article class="post single-post">
+                     <div class="post-thumb">
+                        <a href="blog-details.html">
+                  <img src="{% static 'agroment/img/post/6.jpg' %}" alt="post thumb">
+               </a>
+                        <div class="post-date">July 20, 2022</div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-meta">
+                           <span>By:
+                     <a href="#">Micle 2</a>
+                  </span>
+                           <span><a href="#">09 post_comments</a></span>
+                        </div>
+                        <h5>
+                           <a href="blog-details.html">Natural Green Shop</a>
+                        </h5>
+                        <p>long established fact that a reader will be distract ed by the readable content</p>
+                        <a href="blog-details.html" class="readmore-btn">Read More</a>
+                     </div>
+               </article>
+            </div>
+            <!--Single post -->
+            
+            <!-- Single post -->
+            <div class="col-md-12 wow fadeInUp custom_grid_class">
+               <article class="post single-post">
+                     <div class="post-thumb">
+                        <a href="blog-details.html">
+                  <img src="{% static 'agroment/img/post/7.jpg' %}" alt="post thumb">
+               </a>
+                        <div class="post-date">Jan 09, 2022</div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-meta">
+                           <span>By:
+                     <a href="#">Jalos 2</a>
+                  </span>
+                           <span><a href="#">09 post_comments</a></span>
+                        </div>
+                        <h5>
+                           <a href="blog-details.html">Fresh Food Challenge</a>
+                        </h5>
+                        <p>long established fact that a reader will be distract ed by the readable content</p>
+                        <a href="blog-details.html" class="readmore-btn">Read More</a>
+                     </div>
+               </article>
+            </div>
+            <!--Single post -->
+            
+         </div>
+   </div>
+</div>
+<!--posts Area -->
+
+<!-- click Area -->
+<div class="clicks-area" style="border-top: 1px solid #eeeeee;">
+   <div class="container" >
+      <div class="blockquote-click-area">
+         CON UN CLICK
+      </div>
+      <div class="row row-cols-1  row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4  g-4">
+         <!-- 1 -->
+         <div class="col">
+            <div class="card h-100" >
+               <div class="card-body">
+               <h4 class="card-title click_cards__text--green fw-bold">CON UN CLICK</h4>
+               <p class="card-text text-dark">
+                  <h5 class=""><strong>En qué grupo estás?<br></strong><strong>Eres un bicho raro?&nbsp;</strong></h5>
+                  <p>Responde estas sencillas preguntas y podrás saber lo particular de tus gustos .</p>
+                  <p dir="ltr"><strong>DESCÚBRELO con UN&nbsp;CLICK:</strong></p>
+               </p>
+               
+               </div>
+            </div>
+         </div>
+         <!-- 2 -->
+         <!-- <div class="col ">
+            <div class="card  click_cards__bg" >
+               <div class="card-body">
+               <h5 class="card-title">Special title treatment</h5>
+               <p class="card-text">
+                  <form action="#">
+                     <div class="pay-type-total">
+                     <div class="pay-type">
+                        <input type="radio" id="pay-toggle01" name="pay">
+                        <label for="pay-toggle01">Direct Bank Transfer</label>
+                     </div>
+                     <div class="pay-type">
+                        <input type="radio" id="pay-toggle02" name="pay">
+                        <label for="pay-toggle02">Cheque Payment</label>
+                     </div>
+                     <div class="pay-type">
+                        <input type="radio" id="pay-toggle03" name="pay">
+                        <label for="pay-toggle03">Cash on Delivery</label>
+                     </div>
+                     <div class="pay-type">
+                        <input type="radio" id="pay-toggle04" name="pay">
+                        <label for="pay-toggle04">Paypal</label>
+                     </div>
+                     </div>
+                     <div class="input-box">
+                        <button type="submit" class="default-btn">Place order</button>
+                     </div>
+                  </form>
+               </p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+               </div>
+            </div>
+         </div> -->
+         
+         <!-- 2 -->
+         <div class="col ">
+            <!-- <div class="card  click_cards__bg h-100 shadow" >
+               <div class="card-body">
+                  <h5 class="card-title text-dark">Los quesos españoles...</h5>
+                  <p class="card-text">
+                     <form action="#" class="text-dark fs-9">
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 1.36%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Tienen poca calidad 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 4.09%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Hay poca variedad 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 55.21%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Son sabrosos y variados 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 39.33%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Somo un país con alta producción 
+                           </label>
+                        </div>
+
+                        <div class="input-box mt-5 float-end">
+                           <button type="submit" class="default-btn float-end">¡Vota!</button>
+                        </div>
+                     </form>
+                  </p>                 
+               </div>
+            </div> -->
+            <div id="click-encuesta1" >
+               <div class="wrapper2">
+                  <div class="title">Los quesos españoles...</div>
+                  <div class="box">
+                     <input type="radio" value="( 1.36%)" name="select" id="value-1">
+                     <input type="radio" value="( 4.09%)" name="select" id="value-2">
+                     <input type="radio" value="( 55.21%)" name="select" id="value-3">
+                     <input type="radio"  value="( 39.33%)" checked name="select" id="value-4">
+                     <label for="value-1" class="value-1">
+                        <div class="select-dots"></div>
+                        <div class="text">Tienen poca calidad</div>
+                     </label>
+                     <label for="value-2" class="value-2">
+                        <div class="select-dots"></div>
+                        <div class="text">Hay poca variedad</div>
+                     </label>
+                     <label for="value-3" class="value-3">
+                        <div class="select-dots"></div>
+                        <div class="text">Son sabrosos y variados</div>
+                     </label>
+                     <label for="value-4" class="value-4">
+                        <div class="select-dots"></div>
+                        <div class="text">Somo un país con alta producción</div>
+                     </label>
+                     <!-- Example progressBar -->
+                     <!-- <div class="progress" style="height: 5px;">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 39.33%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>                      -->
+                  </div>
+                  <div class="d-flex justify-content-end">                    
+                     <button  class="default-btn default-btn-transparent mb-2 me-2">¡Vota!</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <!-- 3 -->
+         <div class="col">
+            <!-- <div class="card click_cards__bg h-100 shadow" >
+               <div class="card-body">
+                  <h5 class="card-title text-dark">Los frutos secos</h5>
+                  <p class="card-text">
+                     <form action="#" class="text-dark fs-9">
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 1.28%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Dan muchas alérgias 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 37.74%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Aportan omega 3 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 1.16%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              No debemos incluirlos en la dieta 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 59.82%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Son muy nutritivos 
+                           </label>
+                        </div>
+
+                        <div class="input-box mt-5 float-end">
+                           <button type="submit" class="default-btn float-end">¡Vota!</button>
+                        </div>
+                     </form>
+                  </p>           
+               </div>
+            </div> -->
+            <div id="click-encuesta2" >
+               <div class="wrapper2">
+                  <div class="title">Los frutos secos</div>
+                  <!-- <form action=""> -->
+                     <div class="box">
+                        <input type="radio" value="( 1.28%)" name="select_2" id="click-encuesta2-value-1">
+                        <input type="radio" checked value="( 37.74%)" name="select_2" id="click-encuesta2-value-2">
+                        <input type="radio" value="( 1.16%)" name="select_2" id="click-encuesta2-value-3">
+                        <input type="radio" value="( 59.82%)" name="select_2" id="click-encuesta2-value-4">
+                        <label for="click-encuesta2-value-1" class="click-encuesta2-value-1">
+                           <div class="select-dots"></div>
+                           <div class="text">Dan muchas alérgias</div>
+                        </label>
+                        <label for="click-encuesta2-value-2" class="click-encuesta2-value-2">
+                           <div class="select-dots"></div>
+                           <div class="text">Aportan omega 3</div>
+                        </label>
+                        <label for="click-encuesta2-value-3" class="click-encuesta2-value-3">
+                           <div class="select-dots"></div>
+                           <div class="text">No debemos incluirlos en la dieta</div>
+                        </label>
+                        <label for="click-encuesta2-value-4" class="click-encuesta2-value-4">
+                           <div class="select-dots"></div>
+                           <div class="text">Son muy nutritivos</div>
+                        </label>
+                     </div>
+                  <!-- </form> -->
+                  <div class="d-flex justify-content-end">                    
+                     <button type="submit" class="default-btn mb-2 me-2 default-btn-transparent">¡Vota!</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <!-- 4 -->
+         <div class="col">
+            <!-- <div class="card click_cards__bg h-100 shadow" >
+               <div class="card-body">
+                  <h5 class="card-title text-dark">Las algas</h5>
+                  <p class="card-text">
+                     <form action="#" class="text-dark fs-9">
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 80.47%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Son fuente de salud 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 0.67%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              No es recomendable su ingesta 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 2.91%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Sólo las usan en alta cocina 
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 15.94%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Aportan vitaminas 
+                           </label>
+                        </div>
+
+                        <div class="input-box mt-5 float-end">
+                           <button type="submit" class="default-btn float-end">¡Vota!</button>
+                        </div>
+                     </form>
+                  </p>           
+               </div>
+            </div> -->
+            <!-- encuestas -->
+            <div id="click-encuesta3" >
+               <div class="wrapper2">
+                  <div class="title">Las algas</div>
+                  <div class="box">
+                     <input type="radio" checked value="( 80.47%)" name="select_3" id="click-encuesta3-value-1">
+                     <input type="radio"  value="( 0.67%)" name="select_3" id="click-encuesta3-value-2">
+                     <input type="radio" value="( 2.91%)" name="select_3" id="click-encuesta3-value-3">
+                     <input type="radio" value="( 15.94%)" name="select_3" id="click-encuesta3-value-4">
+                     <label for="click-encuesta3-value-1" class="click-encuesta3-value-1">
+                        <div class="select-dots"></div>
+                        <div class="text">Son fuente de salud </div>
+                     </label>
+                     <label for="click-encuesta3-value-2" class="click-encuesta3-value-2">
+                        <div class="select-dots"></div>
+                        <div class="text">No es recomendable su ingesta </div>
+                     </label>
+                     <label for="click-encuesta3-value-3" class="click-encuesta3-value-3">
+                        <div class="select-dots"></div>
+                        <div class="text">Sólo las usan en alta cocina</div>
+                     </label>
+                     <label for="click-encuesta3-value-4" class="click-encuesta3-value-4">
+                        <div class="select-dots"></div>
+                        <div class="text">Aportan vitaminas </div>
+                     </label>
+                  </div>
+                  <div class="d-flex justify-content-end">                    
+                     <button type="submit" class="default-btn mb-2 me-2 default-btn-transparent">¡Vota!</button>
+                  </div>
+               </div>
+            </div>
+ <!-- fin encuesta -->
+         </div>
+
+      </div>
+   </div>
+</div>
+
+<!-- Ponte a prueba area -->
+<div class="posts-area" style="border-top: 1px solid #eeeeee;padding-bottom: 50px;">
+   <div class="container">
+      <div class="blockquote">
+         ¡PONTE A PRUEBA!
+      </div>
+      
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3   g-4">
+         <!-- 1 -->
+         <div class="col">
+            <div class="card shadow" >
+               <div class="card-body">
+                  <h5 class="card-title text-dark card-test-yourself__title">¿CUÁNDO HA NACIDO LA GENERACIÓN Z?</h5>
+                  <p class="card-text">
+                     <form action="#" class="text-dark fs-9 ">
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 80.47%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Entre 1965 y 1975
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 0.67%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Entre 1995 y 2000
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 2.91%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Entre 2004 y 2015
+                           </label>
+                        </div>
+
+                        <div class="input-box mt-2 float-end">
+                           <button type="submit" class="default-btn default-btn-transparent float-end">Saber mas</button>
+                        </div>
+                     </form>
+                  </p>           
+               </div>
+            </div>
+         </div>
+         <!-- 2 -->
+         <div class="col">
+            <div class="card shadow" >
+               <div class="card-body">
+                  <h5 class="card-title text-dark card-test-yourself__title">¿Cuántas raciones de fruta y verdura son recomendables en una dieta saludable?</h5>
+                  <p class="card-text">
+                     <form action="#" class="text-dark fs-9">
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 80.47%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Una pieza de fruta y una ración de verdura
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 0.67%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              3 raciones
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 2.91%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              5 raciones
+                           </label>
+                        </div>
+
+                        <div class="input-box mt-2 float-end">
+                           <button type="submit" class="default-btn default-btn-transparent float-end">Saber mas</button>
+                        </div>
+                     </form>
+                  </p>           
+               </div>
+            </div>
+         </div>
+         <!-- 3 -->
+         <div class="col">
+            <div class="card shadow" >
+               <div class="card-body">
+                  <h5 class="card-title text-dark card-test-yourself__title">¿Qué es un "patrón de alimentación"?</h5>
+                  <p class="card-text">
+                     <form action="#" class="text-dark fs-9">
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 80.47%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              La cantidad de carnes y embutidos que se comen diariamente
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 0.67%)" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              Las calorías que se ingieren diariamente
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" value="( 2.91%)" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Los alimentos que se consumen a través del tiempo
+                           </label>
+                        </div>
+
+                        <div class="input-box mt-2 float-end">
+                           <button type="submit" class="default-btn default-btn-transparent float-end">Saber mas</button>
+                        </div>
+                     </form>
+                  </p>           
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Banner area -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3  mt-2  g-4 ">
+         <!-- 1 -->
+         {% for banner in list_banners %}
+         {# image banner.image fill-510x210 #}
+         {# banner.image #}
+         <div class="col">
+            <div class="card bg-dark text-white border-0  shadow card__banner-images">
+               <!-- <img src="/media/images/pexels-pixabay-97082.2e16d0ba.fill-510x210.jpg" class="card-img" alt="..."> -->
+               <!-- <img src="/media/images/pexels-pixabay-97082.2e16d0ba.fill-510x210.jpg" class="card-img" alt="..."> -->
+               {# image banner.image fill-510x210 #}
+               {# image banner.image max-1000x500 #}
+               {% image banner.image width-1000 %}
+               <div class="card-img-overlay">
+                 <h5 class="card-title fw-bold rounded" style="max-width:70%; font-size: 14px; padding: 10px ;background:rgba(0, 0, 0, 0.6) none repeat scroll 0 0;">{{ banner.text }}</h5>
+                 <p class="card-text "></p>
+                 <p class="card-text"></p>
+               </div>
+             </div>
+         </div>
+         {% endfor %}
+
+         
+      </div>
+
+
+   </div>
+</div>
+
+<!-- blog area -->
+
+<div class="blog-area" style="border-top: 1px solid #eeeeee;">
+<div class="container">
+   <div class="blockquote-blog-area mt-5">
+      EL BLOG DE MUNDO SABOR
+   </div>
+   <div class="row">
+       <div class="col-lg-8 order-lg-0 order-2">
+           <div class="row">
+               <div class="col-md-4 mb-4">
+                   <img class=""
+                       src="{% static 'img/TESPO_GO_1.png' %}"
+                       alt="">
+               </div>
+               <div class="col-md-8 mb-4">
+                   <div class="d-flex align-items-center">
+                       <span class="bg-org">javascript</span>
+                       <span class="text-muted ps-4">March 27, 2021</span>
+                   </div>
+                   <div>
+                       <p class="text-capitalize fs5 my-3 fw-bolder">TENDENCIAS DE BIENESTAR_BEBIDAS Y ALIMENTOS PARA 2018</a>
+                       <p class="text-muted">¿Un dispensador para tomar vitaminas en casa? ¿Cómo una cafetera de sobremesa en cápsulas? Si, en EEUU ya tienen disponible este modelo TESPO GO que contiene 1 dispensador, 1 taza, 1 cable de alimentación, para tomar sus vitaminas sobre la marcha. </a>
+                   </div>
+               </div>
+               <div class="col-md-4 mb-4">
+                   <img class=""
+                       src="{% static 'img/yogurtSalado_01.png' %}"
+                       alt="">
+               </div>
+               <div class="col-md-8 mb-4">
+                   <div class="d-flex align-items-center">
+                       <span class="bg-blue">css</span>
+                       <span class="text-muted ps-4">May 27, 2021</span>
+                   </div>
+                   <div>
+                       <p class="text-capitalize fs5 my-3 fw-bolder">YOGUR SALADO... TENDENCIA EN EEUU. ¿Y EN EUROPA?</a>
+                       <p class="text-muted">El yogur salado ha llegado a EEUU, pero ¿en Europa? </a>
+                   </div>
+               </div>
+               <div class="col-md-4 mb-4">
+                   <img src="{% static 'img/d84613ad6b.png' %}"
+                       alt="">
+               </div>
+               <div class="col-md-8 mb-4">
+                   <div class="d-flex align-items-center">
+                       <span class="bg-vio">JQuery</span>
+                       <span class="text-muted ps-4">March 1, 2021</span>
+                   </div>
+                   <div>
+                       <p class="text-capitalize fs5 my-3 fw-bolder">SNACK'S DIFERENTES ¿TE ATRAVES?</a>
+                       <p class="text-muted">NO picar entre horas siempre ha sido un “esfuerzo” por el sentimiento de culpabilidad que luego nos crea. </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-4 order-lg-1 mb-3">
+           <span class="fs-4 mb-2 fw-bold text-capitalize">catagories</span>
+           <div class="d-flex flex-column">
+               <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                   <span>Web Design</span>
+                   <span class="bg-green">340</span>
+               </div>
+               <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                   <span>javascript</span>
+                   <span class="bg-orgn">74</span>
+               </div>
+               <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                   <span>JQuery</span>
+                   <span class="bg-blu">41</span>
+               </div>
+               <div class="d-flex align-items-center justify-content-between border-bottom py-2">
+                   <span>CSS</span>
+                   <span class="bg-violet">35</span>
+               </div>
+           </div>
+           <div class="d-flex flex-wrap  my-5">
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="top" title="Chorme" href="#">Chorme</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" href="#">CSS</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="top" title="Tutorial"
+                   href="#">Tutorial</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="top" title="Backend"
+                   href="#">Backend</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="left" title="JQuery"
+                   href="#">JQuery</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="top" title="Design" href="#">Design</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="right" title="Development"
+                   href="#">Development</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="bottom" title="javascript"
+                   href="#">Javascript</a>
+               <a class="items" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Website"
+                   href="#">Website</a>
+
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+
+
+
+{% endblock content %}

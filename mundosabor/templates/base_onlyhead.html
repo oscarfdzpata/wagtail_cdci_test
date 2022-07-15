@@ -1,0 +1,87 @@
+{% load static wagtailcore_tags wagtailuserbar %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            {% block title %}
+                {% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}
+            {% endblock %}
+            {% block title_suffix %}
+                {% wagtail_site as current_site %}
+                {% if current_site and current_site.site_name %}- {{ current_site.site_name }}{% endif %}
+            {% endblock %}
+        </title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {# Global stylesheets #}
+        <meta name="generator" content="TYPO3 4.5 CMS">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/fuentes.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mundosabor.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/supersized.css' %}"> 
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/default_style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/abecfa.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/simple.css' %}">
+        <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/sunny/jquery-ui.css" media="all">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/rte.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mainstyles.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mainstyles2.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/slightbox.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/buttons-secure.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mundosabor12.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bloques.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/comunes.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/localmenu.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/search.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/comunidad.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/supersized.core.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/pie.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/prepie.css' %}">
+
+                
+        <style type="text/css">
+            /*<![CDATA[*/
+            <!-- 
+            /*a38ce69e3cf303bb476f3bd188538be3*/
+            
+            #c41 .nivoSlider {
+                width: 614px;
+                height: 236px;
+            }
+            -->
+            /*]]>*/
+            </style>
+        {% block extra_css %}
+            {# Override this in templates to add extra stylesheets #}
+        {% endblock %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js" type="text/javascript"></script>
+    </head>
+
+  
+        {% block content %}{% endblock %}
+       
+<!-- end #pageWrap  -->
+        {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/mundosabor.js' %}"></script>
+        <script src="https://connect.facebook.net/es_ES/all.js?hash=84d103d1f506b5f9447f915b905f4e8a" async="" crossorigin="anonymous"></script>
+        <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+        <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
+        <script type="text/javascript" id="async-buttons" src="https://ws.sharethis.com/button/async-buttons.js"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.cycle.all.min.js' %}"></script>
+        <script src="{% static 'js/noConflict.js' %}" type="text/javascript"></script>
+        {% block extra_js %}
+            {# Override this in templates to add extra javascript #}
+        {% endblock %}
+    </body>
+</html>

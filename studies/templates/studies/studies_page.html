@@ -1,0 +1,348 @@
+{% extends "base_onlyhead.html" %}
+{% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% block body_class %}template-studies_page{% endblock %}
+
+{% block content %}
+
+<body id="f1a">
+
+	<div id="pageWrap">
+		<div id="nav"></div>
+		<div id="header">
+			<div class="centrar">
+				<!--DMAILER_SECTION_BOUNDARY_-->
+				<div class="logo">
+					<h1>
+						<a href="http://localhost:8000"><img title="Mundo Sabor" alt="Mundo Sabor"
+								src="{% static 'img/mundosabor.png' %}" class=" w3c w3c36"></a>
+					</h1>
+				</div>
+				<!--DMAILER_SECTION_BOUNDARY_END-->
+				<!--DMAILER_SECTION_BOUNDARY_-->
+				<a href="empresa.html" class="reclamo">
+					<span>¿Eres una empresa y quieres que Mundo Sabor haga un estudio de tus productos?</span>
+				</a>
+				<div id="detallecabecera">
+					<div class="turquesa">
+						<div class="detalle"></div>
+					</div>
+					<div class="verde">
+						<div class="detalle"></div>
+					</div>
+					<div class="morado">
+						<div class="detalle"></div>
+					</div>
+					<div class="rosa">
+						<div class="detalle"></div>
+					</div>
+					<div class="azul">
+						<div class="detalle"></div>
+					</div>
+					<div class="negro">
+						<div class="detalle"></div>
+					</div>
+					<div class="gris">
+						<div class="detalle"></div>
+					</div>
+				</div>
+				<!--DMAILER_SECTION_BOUNDARY_END-->
+				<!--DMAILER_SECTION_BOUNDARY_-->
+				<div class="menusuperior">
+					<ul class="">
+						<li>
+							<a href="{% slugurl 'home' %}">Inicio</a>
+						</li>
+						<li>
+							<a href="{% slugurl 'mundo-sabor' %}">Mundo Sabor</a>
+						</li>
+						<li class="dir">
+							<a href="{% slugurl 'estudios' %}">Estudios</a>
+						</li>
+						<li class="dir">
+							<a href="{% slugurl 'sabias-que' %}">Sabías qué</a>
+						</li>
+						<li>
+							<a href="{% slugurl 'blog' %}">Blog</a>
+						</li>
+						{% if request.user.is_authenticated%}
+                            <li class="dir">
+                                <a href="{% slugurl 'bienvenido-a-la-comunidad' %}">Comunidad Mundo Sabor</a>
+                            </li>
+                       {% else %}
+                            <li class="dir">
+                                <a href="{% slugurl 'comunidad' %}">Comunidad Mundo Sabor</a>
+                            </li>
+                       {% endif %}
+						<li class="dir">
+							<a href="{% slugurl 'premios' %}">Premios</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<!-- end #globalMenu  -->
+				<!--DMAILER_SECTION_BOUNDARY_END-->
+				<!--DMAILER_SECTION_BOUNDARY_-->
+				<div class="tx-loginboxmacmade-pi2">
+                    {% if not request.user.is_authenticated %}
+                    <form action="{% url 'userManagement:login' %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <fieldset>
+                            <label for="user">Correo electrónico</label>
+                            <label for="pass">Contraseña</label>
+                            <input name="username" type="text" size="10">
+                            <input name="password" type="password" size="10">
+                            <input id="btnacceder" name="submit" type="submit" value="Entrar">
+                            <a id="btnregistro" href="{% url 'userManagement:register' %}" target="_blank">¿Aún no eres usuario registrado?
+								<span>Regístrate</span>
+							</a>
+                            <input name="logintype" type="hidden" value="login"><input name="redirect_url" type="hidden"
+                                value=""><input name="pid" type="hidden" value="86">
+                        </fieldset>
+                    </form>
+                    {% else %}
+						<form action="{% url 'userManagement:logout' %}" method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+							<span class="bienvenido">Bienvenido, <a href="{%url 'userManagement:profile' %}" class="usuario">{{request.user.username}}</a></span>
+							<input id="btnacceder" name="submit" type="submit" value="Cerrar sesión">
+							<a href="{%url 'userManagement:modify' %}">Editar perfil</a>
+							<input name="logintype" type="hidden" value="logout"><input name="redirect_url" type="hidden" value="no_cache/comunidad-mundo-sabor.html"><input name="pid" type="hidden" value="86">
+						</form>
+					{% endif %}
+                </div>
+				<!--DMAILER_SECTION_BOUNDARY_END-->
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="breadcrumbs">
+			<div class="centrar">
+				<!--DMAILER_SECTION_BOUNDARY_-->
+				<div id="c308" class="csc-default">
+					<span>Mundo Sabor</span>
+					<span>&gt;</span>
+				</div>
+				<!--DMAILER_SECTION_BOUNDARY_END-->
+				<!--DMAILER_SECTION_BOUNDARY_-->
+				<div class="social">
+					<div class="csc-textpic csc-textpic-right csc-textpic-above">
+						<div class="csc-textpic-imagewrap">
+							<ul>
+								<li class="csc-textpic-image csc-textpic-firstcol w3c37">
+									<a href="http://www.foodtrendtrotters.com/" target="_blank">
+										<img src="{% static 'img/tsmall.jpg' %}" alt="Visita Food Trend Trotters"
+											class=" w3c1">
+									</a>
+								</li>
+								<li class="csc-textpic-image w3c38">
+									<a href="mailto:comunidad@mundosabor.es" title="Contáctanos">
+										<img src="{% static 'img/Gmail-logo2.jpg' %}" alt="Contáctanos" class=" w3c2">
+									</a>
+								</li>
+								<li class="csc-textpic-image w3c39">
+									<a href="http://www.facebook.com/mundosabor" target="_blank">
+										<img src="{% static 'img/facebook.png' %}"
+											alt="Visita nuestra página en facebook" class=" w3c3">
+									</a>
+								</li>
+								<li class="csc-textpic-image w3c40">
+									<a href="http://twitter.com/#!/mundosabor" target="_blank">
+										<img src="{% static 'img/twitter.png' %}"
+											alt="Accede a nuestro perfil en twitter" class=" w3c4">
+									</a>
+								</li>
+								<li class="csc-textpic-image csc-textpic-lastcol w3c41">
+									<a href="http://www.linkedin.com/company/mundo-sabor" target="_blank">
+										<img src="{% static 'img/link.png' %}" alt="Visita nuestro perfil en LinKedin"
+											class=" w3c5">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="csc-textpic-clear">
+						<!-- -->
+					</div>
+				</div>
+				<!--DMAILER_SECTION_BOUNDARY_END-->
+			</div>
+		</div>
+
+		<div id="contentWrap-outer">
+			<div id="contentWrap">
+
+
+
+
+
+
+
+				<a href="estudios/tendencias-de-consumo-y-dieta.html#beginContent" id="beginContent"
+					class="outOfSight"></a>
+				<div class="centroauxiliar">
+					<div class="detallelinea"></div>
+					<div id="contentBlock-1">
+						<!--TYPO3SEARCH_begin-->
+						<!--DMAILER_SECTION_BOUNDARY_-->
+						<div id="c693" class="csc-default">
+							<div class="csc-textpic csc-textpic-intext-right-nowrap">
+								<div class="csc-textpic-imagewrap w3c26" style="width:20%">
+									<!--  -->
+									{% for item in page.gallery_images.all %}
+									<div class="csc-textpic-imagerow csc-textpic-imagerow-last w3c12" >
+										<ul>
+											<li class="csc-textpic-image csc-textpic-firstcol csc-textpic-lastcol w3c18">
+												{% image item.image width-200 %}
+												<!-- <img src="{% static 'img/3f33d6c3f9.jpg' %}" alt="" class="w3c20" /> -->
+											</li>
+										</ul>
+									</div>
+									{% endfor %}
+									<!--  -->
+								</div>
+								<div class=" " style="width:80%">
+									<div class="csc-textpic-text">
+										<div class="csc-textpicHeader csc-textpicHeader-25">
+											<div class="csc-header csc-header-n1">
+												<h2 class="csc-firstHeader">{{page.title}}</h2>
+											</div>
+										</div>
+										{{page.body|richtext}}
+									</div>
+								</div>
+								<div class="csc-textpic-clear">
+									<!-- -->
+								</div>
+							</div>
+							<div class="csc-textpic-clear"><!-- --></div>
+						</div>
+						<div class="clearOnly"></div>
+					
+			
+			
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				
+
+
+			<hr class="clear">
+			<div class="clear" id="prepie">
+				<div class="centrar"></div>
+			</div>
+			<div class="clear" id="pie">
+				<div class="centrar">
+					<!--DMAILER_SECTION_BOUNDARY_-->
+					<div class="flotante izquierdo">
+						<!--DMAILER_SECTION_BOUNDARY_-->
+						<div class="fondorayas" style="height: 338px;">
+							<div class="detalle"></div>
+							<span class="unproyecto">Un proyecto de </span>
+							<a href="http://www.sirpac.es" title="SIRPAC">
+								<img src="{% static 'img/sirpac.png' %}"
+									alt="Sistema Integrado en Red de Prospección, Análisis y Divulgación de Pautas de Consumo"
+									class=" w3c34">
+							</a>
+							<div class="foodtend">
+								<span>Colabora:</span>
+								<a href="http://www.foodtrendtrotters.com/" title="Food Trend Trotters">
+									<img class="img-food w3c35" src="{% static 'img/tbig.jpg' %}"
+										alt="Food Trend Trotters">
+								</a>
+							</div>
+
+							<!-- <a href="http://www.sirpac.es" title="SIRPAC"><span class="irasirpac">Ir a la página de web de SIRPAC</span></a> -->
+						</div>
+						<!--DMAILER_SECTION_BOUNDARY_END-->
+					</div>
+					<!--DMAILER_SECTION_BOUNDARY_END-->
+					<!--DMAILER_SECTION_BOUNDARY_-->
+					<div class="flotante derecho">
+						<!--DMAILER_SECTION_BOUNDARY_-->
+						<div class="columnas" style="height: 338px;">
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="turquesa">
+								<div class="detalle"></div>
+								<div class="csc-header csc-header-n1">
+									<h2 class="csc-firstHeader">
+										<a href="" title="Acceder a: Portada">Inicio</a>
+									</h2>
+								</div>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="verde">
+								<div class="detalle"></div>
+								<div class="csc-header csc-header-n2">
+									<h2>Sábias que...</h2>
+								</div>
+								
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="morado">
+								<div class="detalle"></div>
+								<div class="csc-header csc-header-n3">
+									<h2>El mundo sabe a...</h2>
+								</div>
+								<ul class="csc-menu csc-menu-def">
+									<li>
+										<a href="{% slugurl 'blog' %}" title="Blog">Blog</a>
+									</li>
+								</ul>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="rosa">
+								<div class="detalle"></div>
+								<div class="csc-header csc-header-n4">
+									<h2>Comunidad Mundo Sabor</h2>
+								</div>
+								<ul class="csc-menu csc-menu-def">
+									<li>
+										<a href="{% slugurl 'comunidad' %}" title="Comunidad Mundo Sabor">Comunidad Mundo Sabor</a>
+									</li>
+									<li>
+										<a href="{% url 'userManagement:register' %}" title="Registro">Registro</a>
+									</li>
+								</ul>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="azul">
+								<div class="detalle"></div>
+								<div class="csc-header csc-header-n5">
+									<h2>Apartados legales</h2>
+								</div>
+								<ul class="csc-menu csc-menu-1">
+									<li>
+										<a href="{% slugurl 'aviso-legal' %}" title="Aviso legal">Aviso legal</a>
+									</li>
+									<li>
+										<a href="{% slugurl 'politica-de-privacidad' %}" title="Política de privacidad">Política de privacidad</a>
+									</li>
+									<li>
+										<a href="{% slugurl 'politica-de-cookies' %}" title="Politica Cookies">Politica Cookies</a>
+									</li>
+									
+								</ul>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div id="c161" class="csc-default">
+								<div class="clear limpiar logosgob"></div>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<div class="clear limpiar"></div>
+						</div>
+						<!--DMAILER_SECTION_BOUNDARY_END-->
+					</div>
+					<!--DMAILER_SECTION_BOUNDARY_END-->
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+			
+			{% endblock %}

@@ -1,0 +1,178 @@
+form input, form textarea {
+    margin-right: 5px;
+    /*width: 90px; 
+    height: 23px;
+    background-color: darkgray;
+    color: white;
+    font-size: 14px;
+    font-family: cursive;*/
+    }
+  
+  form input:focus, form input:hover {
+    color: black;
+    }
+  
+  form select {
+    font-size: 11px;
+    }
+  
+  form option {
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 10px;
+    }
+  
+  optgroup {
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    margin-top: 5px;
+    }
+  
+  optgroup option {
+    padding-left: 5px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: black;
+    }
+    
+  /************* Section Menus ********************/
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    /*margin-left: 30px !important;
+    display: inherit !important;
+    padding-top: 5px;*/
+  }
+  
+  .instructions {
+    font-size: 10px;
+    line-height: 1.1em;
+  }
+  
+  input[type=text],
+  input[type=password],
+  textarea,
+  select {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    margin: 5px 0 0 0;
+  }
+  
+  input[type=text]:focus,
+  input[type=password]:focus
+  textarea:focus,
+  select:focus {
+    border-color: #666;
+  }
+  
+  input[type=text],
+  input[type=password],
+  textarea,
+  select {
+    margin: 3px 0;
+  }
+  
+  input[type=text],
+  input[type=password] {
+    /* width: 300px; */
+    padding:3px;
+  }
+  
+  textarea {
+    width: 390px;
+    height: 250px;
+    padding: 3px;
+  }
+  
+  /* Cambio CSS para que los Botom aparezcan mejor en las encuestas*/
+   
+   input[type=checkbox],
+  input[type=radio] {
+    position: relative;
+    top: .25em;
+  }
+  
+  /*
+  input[type=radio] {
+      position: relative;
+      top: .25em;
+      width: 20px;
+      height: 20px;
+  }
+  
+  input[type=checkbox] {
+      position: relative;
+      top: .25em;
+      width: 20px;
+      height: 20px;
+  
+  }
+  */
+  /* Account for Frontend User Registration using <label> for checkbox items with no other surround markup */
+  #tx-srfeuserregister-pi1-fe_users_form input[type=checkbox] + label,
+  #tx-srfeuserregister-pi1-fe_users_form input[type=radio] + label {
+    margin-top: 0;
+    display: inline;
+    font-weight: normal;
+  }
+  #tx-srfeuserregister-pi1-fe_users_form input[type=checkbox] + label:after,
+  #tx-srfeuserregister-pi1-fe_users_form input[type=radio] + label:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .inline {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .error, .notice, .success {
+    border:2px solid #DDDDDD;
+    margin-bottom:1em;
+    padding:0.8em;
+  }
+  
+  .error:empty, .notice:empty, .success:empty {
+    display: none;
+  }
+  
+  .error {
+    background: #FBE3E4 none repeat scroll 0 0;
+    border-color: #FBC2C4;
+    color: #8A1F11;
+  }
+  
+  .success {
+    background: #E6EFC2 none repeat scroll 0 0;
+    border-color: #C6D880;
+    color: #264409;
+  }
+  
+  .notice {
+    background: #FFF6BF none repeat scroll 0 0;
+    border-color: #FFD324;
+    color: #514721;
+  }
+  
+  form ol,
+  form ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  
+  form hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #bbb;
+    margin: 15px 0 15px 0;
+  }
+  
+  
