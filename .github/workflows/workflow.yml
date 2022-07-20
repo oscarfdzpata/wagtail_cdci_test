@@ -44,6 +44,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: elastic_beanstalk_MundoSabor_python37
         environment_name: Elasticbeanstalkmundosaborpython37-env
-        version_label: 12350
+        version_label:  Sample_Application
         region: "us-east-1"
         deployment_package: deploy.zip
