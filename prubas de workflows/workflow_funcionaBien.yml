@@ -1,0 +1,25 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: [ main ]
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+        # Install Python Dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+ 
+
+        # Build App and Run Application Test
+      - name: Build Application and Run unit Test
+        run: python manage.py test
+
