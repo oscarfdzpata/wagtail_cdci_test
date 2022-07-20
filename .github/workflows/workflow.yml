@@ -35,7 +35,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Generate deployment package
-      run: zip -r Sample_Application_2.zip . -x '*.git*'
+      run: zip -r deploy.zip . -x '*.git*'
 
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
@@ -44,6 +44,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: elastic_beanstalk_MundoSabor_python37
         environment_name: Elasticbeanstalkmundosaborpython37-env
-        version_label:  Sample_Application_2
-        region: "us-east-1"
-        deployment_package: Sample_Application_2.zip
+        version_label:  v1
+        region: us-east-1
+        deployment_package: deploy.zip
